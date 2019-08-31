@@ -1,0 +1,10 @@
+<view class='content'>
+  
+    <open-data type="userAvatarUrl" class='user-avatar'></open-data>
+
+  <open-data class='user-name' type="userNickName"></open-data>
+  <!-- <button>按钮</button> -->
+  <view class='moto-content'>
+    <button open-type="getUserInfo" bindgetuserinfo="getUser" class='moto'>丛心之旅</button>
+  </view>
+</view>

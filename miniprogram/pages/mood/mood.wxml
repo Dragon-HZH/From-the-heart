@@ -1,0 +1,38 @@
+<wxs src='../../utils/filter.wxs' module='filter' />
+<view hidden="{{page_show}}">
+  <view wx:if="{{show_view}}">
+    <!-- 段子 -->
+    <view class="ats_all">
+      <view class="duanzi" wx:for="{{article_list}}" wx:key="{{index}}">
+        <view class="dz_first">
+          <view>
+            <!-- 头像 -->
+            <image src="{{item.author.avatar}}"></image>
+            <!-- 昵称 -->
+            <text class="dz_name">{{item.author.name}}</text>
+          </view>
+          <!-- 标题 -->
+          <text class="dz_title">{{item.title}}</text>
+        </view>
+        <view class="pic_view">
+          <image src="{{item.src}}" wx:if="{{item.src}}"></image>
+        </view>
+        <view class="{{show_list[index]==true?'textMore':'desc'}} text-all" catchtap="dian" data-index="{{index}}">
+          {{item.content}}
+        </view>
+        <view class="v_time">
+          <view class="l_view">
+            <text data-index="{{index}}" catchtap="transform">{{item.isActive?'隐藏...':'发布...'}}</text>
+            <view class="pic_del" catchtap="del_item">
+              <image src="/images/del.png" data-index="{{index}}"></image>
+            </view>
+          </view>
+          <text>{{filter.format(item.time)}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="no_text" catchtap="jumpWrite">
+    您还没有发表过文章
+  </view>
+</view>

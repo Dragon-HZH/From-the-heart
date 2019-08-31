@@ -1,0 +1,44 @@
+/* pages/self/self.wxss */
+page{
+  background: rgba(218, 249, 253, 0.582);
+}
+.content {
+  padding: 20rpx;
+}
+
+.t_author {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 200rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 5px solid rgba(204, 204, 204, 0.582);
+}
+
+.say_info{
+  height: 200rpx;
+  width: 500rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.avt_img {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 10%;
+  margin-right: 40rpx;
+}
+.t_name{
+  font-size: 36rpx;
+  font-weight: 600;
+}
+
+.list{
+  padding-top: 36rpx;
+}
+.list button{
+  text-align: left;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.582);
+}

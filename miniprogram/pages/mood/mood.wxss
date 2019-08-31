@@ -1,0 +1,27 @@
+@import "../../style/textItem.wxss";
+page{
+  background: rgba(218, 249, 253, 0.582);
+}
+.pic_view>image{
+  width: 100%;
+  height: 80rpx;
+}
+
+.l_view{
+  width: 150rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.l_view image{
+  width:40rpx; 
+  height: 40rpx;
+  vertical-align: middle;
+}
+.no_text{
+  font-size: 60rpx;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1000rpx;
+  color: rgba(163, 163, 163, 0.904);
+}

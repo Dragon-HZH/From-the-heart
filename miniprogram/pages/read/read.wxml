@@ -1,0 +1,34 @@
+<wxs src='../../utils/filter.wxs' module='filter' />
+<view class="content" hidden="{{show}}">
+  <!-- 轮播 -->
+  <swiper catchtap='onSwiperTap' vertical='{{false}}' indicator-dots='ture' autoplay='true' interval='3000' indicator-active-color="#1296DB" indicator-color="rgba(255,255,255,.7)">
+    <swiper-item wx:for="{{list_img}}" wx:key="{{index}}">
+      <image src='{{item}}' data-postId='{{index}}'></image>
+    </swiper-item>
+  </swiper>
+  <!-- 段子 -->
+  <view class="ats_all">
+    <view class="duanzi" wx:for="{{article_list}}" wx:key="{{index}}">
+      <view class="dz_first">
+        <view>
+          <!-- 头像 -->
+          <image src="{{item.author.avatar}}"></image> 
+          <!-- 昵称 -->
+          <text class="dz_name">{{item.author.name}}</text>
+        </view>
+        <!-- 标题 -->
+        <text class="dz_title">{{item.title}}</text>
+      </view>
+      <view class="pic_view">
+        <image src="{{item.src}}" wx:if="{{item.src}}"></image>
+      </view>
+      <view class="{{show_list[index]==true?'textMore':'desc'}} text-all" catchtap="dian" data-index="{{index}}">
+        {{item.content}}
+      </view>
+      <view class="v_time">
+        <view></view>
+        <text>{{filter.format(item.time)}}</text>
+      </view>
+    </view>
+  </view>
+</view>

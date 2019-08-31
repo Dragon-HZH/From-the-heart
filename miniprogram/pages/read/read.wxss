@@ -1,0 +1,6 @@
+@import "../../style/course.wxss";
+@import "../../style/textItem.wxss";
+
+page{
+  background: rgba(218, 249, 253, 0.582);
+}

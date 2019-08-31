@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/read/read",
+    "pages/mood/mood",
+    "pages/self/self",
+    "pages/self/article/article"
+  ],
+  "window": {
+    "backgroundColor": "#87daeb",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#87daeb",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/read/read",
+        "text": "阅读",
+        "iconPath": "images/read-1.png",
+        "selectedIconPath": "images/read-2.png"
+      },
+      {
+        "pagePath": "pages/mood/mood",
+        "text": "空间",
+        "iconPath": "images/mood-1.png",
+        "selectedIconPath": "images/mood-2.png"
+      },
+      {
+        "pagePath": "pages/self/self",
+        "text": "我的",
+        "iconPath": "images/self-1.png",
+        "selectedIconPath": "images/self-2.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "vant-weapp/button/index",
+    "van-field": "vant-weapp/field/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

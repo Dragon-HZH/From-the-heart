@@ -1,0 +1,5 @@
+<view>
+  <van-field value="{{ title }}" label="标题" placeholder="请输入段子标题" bind:change="onTitleChange" custom-style="font-size:32rpx;" />
+  <van-field value="{{ content }}" type="textarea" placeholder="请输入文章" autosize bind:change="onContentChange" custom-style="height:1000rpx;margin-top:20rpx;font-size:32rpx;" />
+  <van-button size="large" type="primary" catchtap="submit" class="bottom">上传文章</van-button>
+</view>

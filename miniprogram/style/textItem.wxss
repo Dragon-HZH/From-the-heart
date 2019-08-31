@@ -1,0 +1,60 @@
+.ats_all{
+  margin-top: 15rpx;
+  padding: 0 15rpx 15rpx;
+}
+
+.duanzi{
+  margin-bottom: 20rpx;
+  border: 1px solid rgb(148, 195, 233);
+  border-radius: 6rpx;
+}
+
+.dz_first{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 10rpx 20rpx;
+}
+.dz_name,.dz_title {
+  font-size: 36rpx;
+}
+.dz_title{
+  margin-top: 15rpx;
+}
+.text-all{
+  font-size: 32rpx;
+  margin-top: 5rpx;
+  margin-bottom: 20rpx;
+  padding: 0 20rpx;
+}
+.desc {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.textMore {
+  height: auto;
+}
+
+.dz_first image{
+  width: 58rpx;
+  height: 58rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+
+.v_time{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.v_time>text{
+  font-size: 26rpx;
+  line-height: 45rpx;
+  color: rgb(136, 135, 135);
+}

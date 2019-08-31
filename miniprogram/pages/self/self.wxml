@@ -1,0 +1,19 @@
+<view class="content">
+  <view class="t_author">
+    <image src="{{author.avatar}}" class="avt_img"></image>
+    <view class="say_info">
+      <text class="t_name">{{author.name}}</text>
+      <view>
+        <van-field value="{{ motto }}" clearable  bind:change="onSayChange" use-button-slot>
+          <van-button slot="button" size="small" type="primary" catchtap="updateMotto">修改</van-button>
+        </van-field>
+      </view>
+    </view>
+  </view>
+  <!-- 下列表 -->
+  <view class="list">
+    <button catchtap="jumpWrite">我的编辑</button>
+    <button>我的相册</button>
+    <button>我的喜欢</button>
+  </view>
+</view>
