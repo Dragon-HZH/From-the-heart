@@ -22,7 +22,7 @@
   margin-top: 15rpx;
 }
 .text-all{
-  font-size: 32rpx;
+  font-size: 30rpx;
   margin-top: 5rpx;
   margin-bottom: 20rpx;
   padding: 0 20rpx;

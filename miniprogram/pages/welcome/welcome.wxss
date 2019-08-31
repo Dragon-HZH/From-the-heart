@@ -1,7 +1,7 @@
 /* 背景 */
 /* 全页面设置 */
 page {
-  background-color: #87daeb;
+  background-color: #8ce2f3;
   height: 100%;
 }
 
